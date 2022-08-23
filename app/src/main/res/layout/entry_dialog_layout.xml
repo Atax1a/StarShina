@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/panel_round_back_dialog">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/addTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:paddingStart="5dp"
+            android:text="Записи "
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/addEntryBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_ripple_back_round_10"
+            android:padding="5dp"
+            android:src="@drawable/ic_add" />
+
+        <ImageButton
+            android:id="@+id/deleteEntryBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/addEntryBtn"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_ripple_back_round_10"
+            android:padding="5dp"
+            android:src="@drawable/ic_delete" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/titles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBar"
+        android:background="#7A222830"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/entryNameTitle"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Наименование"
+            android:textColor="@color/text_color"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/entryDateTitle"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Дата записи"
+            android:textColor="@color/text_color"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/entryNumberTitle"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="№ док-та"
+            android:textColor="@color/text_color"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/entryIncomeTitle"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/ic_add" />
+
+        <ImageView
+            android:id="@+id/entryOutomeTitle"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/ic_outcome" />
+
+        <ImageView
+            android:id="@+id/entryCountTitle"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/ic_done" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/emptyTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titles"
+        android:layout_centerInParent="true"
+        android:text="Пусто"
+        android:textColor="@color/text_color"
+        android:textSize="17sp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/entriesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titles"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        tools:itemCount="20"
+        tools:listitem="@layout/entry_item_layout" />
+
+
+</RelativeLayout>

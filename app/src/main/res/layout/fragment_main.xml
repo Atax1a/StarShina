@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:padding="10dp"
+    tools:context=".Fragment.MainFragment">
+
+    <RelativeLayout
+        android:id="@+id/statsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/statsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Расход"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/addSoldierBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/statsContainer"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_ripple_back_round_10"
+            android:padding="5dp"
+            android:src="@drawable/ic_add" />
+
+
+        <LinearLayout
+            android:id="@+id/statsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statsTitle"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:id="@+id/na_lico_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/panel_round_back_10"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/na_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="На лицо"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/na_lico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/na_title"
+                    android:layout_centerHorizontal="true"
+                    android:text="0"
+                    android:textColor="@color/accent_color"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/naryad_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/na_lico_container"
+                android:layout_weight="1"
+                android:background="@drawable/panel_round_back_10"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/n_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="15dp"
+                    android:text="Н"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/naryad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/n_title"
+                    android:layout_centerHorizontal="true"
+                    android:text="0"
+                    android:textColor="@color/accent_color"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/gospital_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/naryad_container"
+                android:layout_weight="1"
+                android:background="@drawable/panel_round_back_10"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/g_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="15dp"
+                    android:text="Г"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/gospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/g_title"
+                    android:layout_centerHorizontal="true"
+                    android:text="0"
+                    android:textColor="@color/accent_color"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dejurstvo_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/gospital_container"
+                android:layout_weight="1"
+                android:background="@drawable/panel_round_back_10"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/d_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="15dp"
+                    android:text="Д"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/dejurstvo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/d_title"
+                    android:layout_centerHorizontal="true"
+                    android:text="0"
+                    android:textColor="@color/accent_color"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/viezd_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/dejurstvo_container"
+                android:layout_weight="1"
+                android:background="@drawable/panel_round_back_10"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/v_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="15dp"
+                    android:text="В"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/viezd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v_title"
+                    android:layout_centerHorizontal="true"
+                    android:text="0"
+                    android:textColor="@color/accent_color"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/other_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/viezd_container"
+                android:layout_weight="1"
+                android:background="@drawable/panel_round_back_10"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/o_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="15dp"
+                    android:text="\?"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/o_title"
+                    android:layout_centerHorizontal="true"
+                    android:text="0"
+                    android:textColor="@color/accent_color"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/soldiersCountContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statsContainer"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/panel_round_back_10"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/countTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="По списку: "
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/soldiersCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_toEndOf="@id/countTitle"
+                android:text="0"
+                android:textColor="@color/accent_color"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/currentTasksTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statsLayout"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Задачи на сегодня:"
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/underlineLayout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/currentTasksTitle"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/text_color" />
+
+    <RelativeLayout
+        android:id="@+id/tasksContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/underlineLayout">
+
+        <TextView
+            android:id="@+id/tasksStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Пусто.."
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tasksRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tasksContainer"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/panel_round_back_10"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/nextWashTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Следующая стирка: "
+                android:textColor="@color/text_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/nextWash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nextWashTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/panel_round_back_10"
+                android:padding="5dp"
+                android:text="00.00.0000"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/panel_round_back_10"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tempTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Временная выдача:"
+                android:textColor="@color/text_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tempCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tempTitle"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:background="@drawable/panel_round_back_10"
+                android:layout_centerHorizontal="true"
+                android:text="0"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

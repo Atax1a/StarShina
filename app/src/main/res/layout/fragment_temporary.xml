@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    tools:context=".Fragment.TemporaryFragment">
+
+
+    <TextView
+        android:id="@+id/edTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Имущество:"
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/clotheName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edTitle1"
+        android:background="@drawable/ed_back_round_10"
+        android:inputType="textPersonName"
+        android:maxLength="40"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/main_color" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/clotheName"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_arrow_down" />
+
+    <TextView
+        android:id="@+id/nameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clotheName"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Кому:"
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/soldierName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTitle"
+        android:background="@drawable/ed_back_round_10"
+        android:inputType="textPersonName"
+        android:maxLength="40"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/main_color" />
+
+    <ImageButton
+        android:id="@+id/addBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/soldierName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_ripple_back_round_green_10"
+        android:padding="10dp"
+        android:src="@drawable/ic_add" />
+
+    <Button
+        android:id="@+id/addAllBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/soldierName"
+        android:text="Выдать всем бойцам"
+        android:layout_marginTop="10dp"
+        android:textSize="10sp"
+        android:background="@drawable/button_ripple_back_round_green_10" />
+
+    <RelativeLayout
+        android:id="@+id/rvContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addBtn"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tempRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/panel_round_back_entry"
+            android:padding="10dp"
+            tools:listitem="@layout/soldier_item_layout" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:id="@+id/loadingRv"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

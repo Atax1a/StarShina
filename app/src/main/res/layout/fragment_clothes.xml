@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/main_color"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context=".Fragment.ClothesFragment">
+
+    <EditText
+        android:id="@+id/clothesSearchEd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/addClotheBtn"
+        android:layout_margin="5dp"
+        android:background="@drawable/ed_back_round_10"
+        android:drawableRight="@drawable/ic_search"
+        android:hint="Поиск..."
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:padding="5dp" />
+
+    <ImageButton
+        android:id="@+id/addClotheBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_ripple_back_round_10"
+        android:padding="5dp"
+        android:src="@drawable/ic_add" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/clothesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/clothesSearchEd"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        tools:itemCount="100"
+        tools:listitem="@layout/clothe_item_layout" />
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/panel_round_back_dialog">
+
+    <TextView
+        android:id="@+id/entryNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Выдать всем бойцам?"
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entryNameTitle"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/noBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_ripple_back_round_red_10"
+            android:src="@drawable/ic_cross" />
+
+        <ImageButton
+            android:id="@+id/yesBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_ripple_back_round_green_10"
+            android:src="@drawable/ic_done" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

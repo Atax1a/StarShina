@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/panel_round_back_dialog"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/gospitalTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Дата убытия в госпиталь"
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+    <com.mikhaellopez.lazydatepicker.LazyDatePicker
+        android:id="@+id/gospital_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gospitalTitle"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ed_back_round_10"
+        android:padding="10dp"
+        app:ldp_date_format="dd-mm-yyyy"
+        app:ldp_hint_color="#4D000000"
+        app:ldp_text_color="#202020" />
+
+    <ImageButton
+        android:id="@+id/doneBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/gospital_picker"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/button_ripple_back_round_green_10"
+        android:src="@drawable/ic_done" />
+
+</RelativeLayout>

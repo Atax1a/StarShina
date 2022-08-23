@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/soldierItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/panel_round_back_10_50"
+    android:gravity="center_vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/zvanie_1"
+        android:layout_width="15dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/fio_container"
+        android:background="#F1C40F" />
+
+    <RelativeLayout
+        android:id="@+id/zvanie_2"
+        android:layout_width="15dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/zvanie_1"
+        android:background="#F1C40F" />
+
+    <RelativeLayout
+        android:id="@+id/fio_container"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+
+        <TextView
+            android:id="@+id/s_surname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Алтынбаев"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/s_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s_surname"
+            android:text="Дамир"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/s_lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s_name"
+            android:text="Рустемович"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/s_vzvod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@id/zvanie_2"
+        android:background="@drawable/panel_round_back_10"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="АВ"
+        android:textColor="@color/text_color"
+        android:textSize="20sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/status_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/status_icon"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/s_status"
+            android:src="@drawable/status_green_round" />
+
+        <TextView
+            android:id="@+id/s_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="Status"
+            android:textColor="@color/text_color" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dmb_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:paddingEnd="9dp">
+
+        <TextView
+            android:id="@+id/dmb_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/status_green_round"
+            android:text="DMBDate"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/dmb_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dmb_date"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="5dp"
+            android:text="DaysLeft"
+            android:textColor="@color/text_color" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

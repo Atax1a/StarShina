@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/panel_round_back_dialog"
+    android:padding="10dp"
+    tools:context=".SoldierAddActivity">
+
+    <TextView
+        android:id="@+id/activityTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Изменить данные"
+        android:textColor="@color/text_color"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activityTitle"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/a_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ed_back_round_10"
+            android:hint="Фамилия"
+            android:inputType="textPersonName"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/a_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/a_surname"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ed_back_round_10"
+            android:hint="Имя"
+            android:inputType="textPersonName"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/a_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/a_name"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ed_back_round_10"
+            android:hint="Отчество"
+            android:inputType="textPersonName"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dmb_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/a_lastname"
+            android:layout_marginTop="10dp"
+            android:text="Дата призыва"
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />
+
+        <com.mikhaellopez.lazydatepicker.LazyDatePicker
+            android:id="@+id/dmb_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dmb_title"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ed_back_round_10"
+            android:padding="10dp"
+            app:ldp_date_format="dd-mm-yyyy"
+            app:ldp_hint_color="#4D000000"
+            app:ldp_text_color="#202020" />
+
+
+        <TextView
+            android:id="@+id/vzvod_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dmb_picker"
+            android:layout_marginTop="10dp"
+            android:text="Взвод"
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />
+
+
+        <info.hoang8f.android.segmented.SegmentedGroup
+            android:id="@+id/vzvod_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vzvod_title"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:sc_border_width="2dp"
+            app:sc_checked_text_color="@color/text_color"
+            app:sc_corner_radius="10dp"
+            app:sc_tint_color="@color/accent_color">
+
+            <RadioButton
+                android:id="@+id/v_av"
+                style="@style/RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="АВ" />
+
+            <RadioButton
+                android:id="@+id/v_aer"
+                style="@style/RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="АЭР" />
+
+            <RadioButton
+                android:id="@+id/v_el"
+                style="@style/RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ЭЛ" />
+
+            <RadioButton
+                android:id="@+id/v_other"
+                style="@style/RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Другой" />
+        </info.hoang8f.android.segmented.SegmentedGroup>
+
+        <TextView
+            android:id="@+id/zvanie_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vzvod_group"
+            android:layout_marginTop="10dp"
+            android:text="Звание"
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/zvanie_container"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/zvanie_title"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/yellow" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/zvanie_1"
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/yellow" />
+
+                    <RelativeLayout
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@id/zvanie_1"
+                        android:background="@color/yellow" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <info.hoang8f.android.segmented.SegmentedGroup xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/zvanie_group"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                segmentedgroup:sc_border_width="2dp"
+                segmentedgroup:sc_checked_text_color="@color/text_color"
+                segmentedgroup:sc_corner_radius="10dp"
+                segmentedgroup:sc_tint_color="#66119DA4">
+
+                <RadioButton
+                    android:id="@+id/z_ryad"
+                    style="@style/RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="" />
+
+                <RadioButton
+                    android:id="@+id/z_efr"
+                    style="@style/RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="" />
+
+                <RadioButton
+                    android:id="@+id/z_ml"
+                    style="@style/RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="" />
+            </info.hoang8f.android.segmented.SegmentedGroup>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zvanie_container"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_ripple_back_round_10"
+            android:text="Изменить" />
+    </RelativeLayout>
+
+</RelativeLayout>

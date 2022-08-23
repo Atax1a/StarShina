@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tempItemLayout"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:padding="5dp"
+    android:background="@drawable/panel_round_back_10_50">
+
+
+    <TextView
+        android:id="@+id/taskName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:maxLength="30"
+        android:maxLines="2"
+        android:text="Заголовок Задачи asdsadasdasdasdasdasd"
+        android:textColor="@color/text_color"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/taskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@id/taskName"
+        android:maxLines="5"
+        android:text="Описание задачи описание задачи описание задачи описание задачи опсиание задачи"
+        android:textColor="@color/text_color"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/switchContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/taskDescription">
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/taskStatusSwitch"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:sb_checked="false"
+            app:sb_checked_color="@color/accent_color"
+            app:sb_show_indicator="false" />
+
+        <TextView
+            android:id="@+id/taskStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/taskStatusSwitch"
+            android:text="Выполнено"
+            android:textColor="@color/accent_color" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

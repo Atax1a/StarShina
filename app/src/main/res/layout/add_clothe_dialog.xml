@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/panel_round_back_20">
+
+    <TextView
+        android:id="@+id/addTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Добавить имущество"
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/clothe_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ed_back_round_10"
+        android:hint="Наименование"
+        android:inputType="textPersonName"
+        android:maxLength="25"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:layout_below="@id/addTitle"/>
+
+    <EditText
+        android:id="@+id/clothe_count"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ed_back_round_10"
+        android:hint="В наличии"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:maxLength="3"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:layout_below="@id/clothe_name"/>
+
+    <ImageButton
+        android:id="@+id/doneBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/clothe_name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_ripple_back_round_green_10"
+        android:src="@drawable/ic_done" />
+
+
+</RelativeLayout>

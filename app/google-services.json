@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "78832832882",
+    "project_id": "starshinaapp",
+    "storage_bucket": "starshinaapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78832832882:android:2599b56c48ba27ccab0deb",
+        "android_client_info": {
+          "package_name": "com.diplom.starshina"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78832832882-6sig2tovji7g6n890vics6ac3omcrmr4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArmYmr4qz3RMy_x9zm5KzcYBmosdC0ns4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "78832832882-6sig2tovji7g6n890vics6ac3omcrmr4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

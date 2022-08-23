@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+            android:iconTint="@color/white"
+            android:icon="@drawable/ic_main"
+            android:title="Главная" />
+        <item
+            android:id="@+id/nav_soldiers"
+            android:icon="@drawable/ic_soldiers"
+            android:title="Бойцы" />
+        <item
+            android:id="@+id/nav_clothes"
+            android:icon="@drawable/ic_clothes"
+            android:title="@string/menu_clothes" />
+
+        <item
+            android:id="@+id/nav_temporary"
+            android:icon="@drawable/ic_temporary"
+            android:title="@string/menu_temp" />
+
+        <item
+            android:id="@+id/nav_tasks"
+            android:icon="@drawable/ic_tasks"
+            android:title="@string/menu_task" />
+    </group>
+</menu>
