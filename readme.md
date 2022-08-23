@@ -53,3 +53,6 @@
    [Segmented]: <https://github.com/Kaopiz/android-segmented-control>
    [LazyDatePicker]: <https://github.com/lopspower/LazyDatePicker>
    
+   [Инструкция приложения.docx](https://github.com/Atax1a/StarShina/files/9404395/default.docx)
+
+   
