@@ -1,3 +1,55 @@
-# Git and Github test 
+# StarShina [RU] [MVP]
+## Карманный старшина
 
-Thats my Github course test 123123213 asdasd
+[![N|Solid](https://imageup.ru/img60/4006199/android_studio_trademarksvg-1.jpg)](https://developer.android.com/)            [![N|Solid](https://imageup.ru/img199/4006205/1280px-firebase_logosvg-1.jpg)](https://firebase.google.com/)
+
+
+
+
+## Описание
+Данное приложение создано для работы в условиях современной армии, а именно для оптимизации рутинной работы **Старшин**.
+В нынешних условиях тотальной бюракратии и отсутствия интеграции цифровых технологий - военнослужащие на должностях старшин имеют множество аспектов, требующих **контроля**, **внимания** и **повторяющихся действий**, которые, в свою очередь, реализуются строго в **печатном** или **рукописном** виде.
+Карманный старшина позволяет сократить количество потраченной бумаги и времени, позволяя сделать рутинные действия в несколько тапов.
+
+
+## Функционал
+
+- Хранение информации о **военнослужащих**;
+    - ФИО;
+    - Звание;
+    - Взвод;
+    - Дата дмб;
+    - Статус.
+- Расчет **расхода** военнослужащих;
+- Материальный учет;
+- Временная выдача материального имущества;
+- ToDo лист.
+
+
+> Данные функции взаимосвязаны, например, 
+данные о военнослужащих могут быть использованы для временной выдачи
+как и материальное имущество.
+
+
+### Технологии
+
+Dillinger uses a number of open source projects to work properly:
+
+- [Firebase] - Firebase DataBase
+- [Segmented] - Сегментированные RadioButton
+- [LazyDatePicker] - Альтернативный DatePicker.
+- [SwitchButton] - Стилизованный Switch
+
+
+## Установка
+
+Скачайте и установите данный APK-файл
+[![N|Solid](https://manceppo.com/wp-content/uploads/2019/05/download-button.png)](https://wdfiles.ru/eba9aa)
+
+
+
+   [Firebase]: <https://firebase.google.com/>
+   [SwitchButton]: <https://github.com/zcweng/SwitchButton>
+   [Segmented]: <https://github.com/Kaopiz/android-segmented-control>
+   [LazyDatePicker]: <https://github.com/lopspower/LazyDatePicker>
+   
