@@ -1,10 +1,8 @@
 package com.diplom.starshina;
-
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.os.Bundle;
 import android.util.Log;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -37,11 +35,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Тулбар //
+        // Тулбар
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        // Дравер для шторки123
+        // Дравер для шторки
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
 
@@ -57,13 +55,6 @@ public class MainActivity extends AppCompatActivity {
         OneTimeWorkRequest oneTimeWorkRequest = new OneTimeWorkRequest.Builder(NotifWorker.class).build();
 
         WorkManager.getInstance().enqueue(oneTimeWorkRequest);
-
-
-
-
-
-
-
 
     }
 
