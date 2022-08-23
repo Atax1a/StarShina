@@ -34,8 +34,6 @@
 
 ### Технологии
 
-Dillinger uses a number of open source projects to work properly:
-
 - [Firebase] - Firebase DataBase
 - [Segmented] - Сегментированные RadioButton
 - [LazyDatePicker] - Альтернативный DatePicker.
