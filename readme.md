@@ -47,7 +47,7 @@
 
 
    
-   [Загрузить]: <https://wdfiles.ru/eba9aa>
+   [Загрузить]: <https://drive.google.com/file/d/1M3hh4cUi2WhllMOEJxGpQdrfB6KcLjpA/view?usp=sharing>
    [Firebase]: <https://firebase.google.com/>
    [SwitchButton]: <https://github.com/zcweng/SwitchButton>
    [Segmented]: <https://github.com/Kaopiz/android-segmented-control>
