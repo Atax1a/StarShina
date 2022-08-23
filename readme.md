@@ -44,10 +44,11 @@ Dillinger uses a number of open source projects to work properly:
 ## Установка
 
 Скачайте и установите данный APK-файл
-[![N|Solid](https://manceppo.com/wp-content/uploads/2019/05/download-button.png)](https://wdfiles.ru/eba9aa)
+#### [Загрузить]
 
 
-
+   
+   [Загрузить]: <https://wdfiles.ru/eba9aa>
    [Firebase]: <https://firebase.google.com/>
    [SwitchButton]: <https://github.com/zcweng/SwitchButton>
    [Segmented]: <https://github.com/Kaopiz/android-segmented-control>
